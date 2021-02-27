@@ -14,7 +14,7 @@ namespace TerrariaMusicPlayer
     {
 
         public override string Name => "TerrariaMusicPlayer";
-        public override Version Version => new Version(1, 0);
+        public override Version Version => new Version(1, 1);
         public override string Author => "ExitiumTheCat";
         public override string Description => "";
 
@@ -25,9 +25,10 @@ namespace TerrariaMusicPlayer
         {
             Commands.ChatCommands.Add(new Command(PlayMusic, "play"));
             Commands.ChatCommands.Add(new Command(PlayMusicOW, "playow"));
+            Commands.ChatCommands.Add(new Command(MusicList, "musiclist"));
+            Commands.ChatCommands.Add(new Command(MusicListOW, "musiclistow"));
             ServerApi.Hooks.GameUpdate.Register(this, OnUpdate);
         }
-
         private void OnUpdate(EventArgs args)
         {
             //No money farm
@@ -120,6 +121,14 @@ namespace TerrariaMusicPlayer
             {
                 args.Player.SendErrorMessage("Please input a music name.");
             }
+        }
+        private void MusicList(CommandArgs args)
+        {
+            args.Player.SendInfoMessage("Overworld Day, Alt Overworld Day, Night, Rain, Snow, Ice, Desert, Ocaen Day, Ocaen Night, Space Day, Night, Underground, Alt Underground, Mushrooms, Jungle, Corruption, Underground Corruption, Crimson, Underground Crimson, The Hallow, Underground Hallow, Hell, Dungeon, Temple, Boss 1, Boss 2, Boss 3, Boss 4, Boss 5, Queen Slime, Plantera, Empress of Light, Duke Fishron, Eerie, Eclipse, Goblin Invasion, Pirate Invasion, Martian Madness, Pumpkin Moon, Frost Moon, The Towers, Lunar Boss, Sandstorm, Old One's Army, Slime Rain, Town Day, Town Night, Windy Day, Day Remix, Journey's Beginning, Storm, Graveyard, Underground Jungle, Jungle Night, Morning Rain, Alt Title, Underground Desert, Journey's End, Title.");
+        }
+        private void MusicListOW(CommandArgs args)
+        {
+            args.Player.SendInfoMessage("Rain, Overworld Day, Night, Underground, Desert, Ocean, Mushrooms, Dungeon, Space, Underworld, Snow, Corruption, Underground Corruption, Crimson, Underground Crimson, Ice, Underground Hallow, Eerie, Boss 2, Boss 1, Invasion, The Towers, Lunar Boss, Plantera, Jungle, Wall of Flesh, Hallow.");
         }
     }
 }

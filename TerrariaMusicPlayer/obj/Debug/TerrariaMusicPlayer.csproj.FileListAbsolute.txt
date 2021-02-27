@@ -7,3 +7,4 @@ C:\Users\Luan Paul\Desktop\!Coding Moment\TShock Plugins\TerrariaMusicPlayer\Ter
 C:\Users\Luan Paul\Desktop\!Coding Moment\TShock Plugins\TerrariaMusicPlayer\TerrariaMusicPlayer\obj\Debug\TerrariaMusicPlayer.csproj.CopyComplete
 C:\Users\Luan Paul\Desktop\!Coding Moment\TShock Plugins\TerrariaMusicPlayer\TerrariaMusicPlayer\obj\Debug\TerrariaMusicPlayer.dll
 C:\Users\Luan Paul\Desktop\!Coding Moment\TShock Plugins\TerrariaMusicPlayer\TerrariaMusicPlayer\obj\Debug\TerrariaMusicPlayer.pdb
+C:\Users\Luan Paul\Desktop\!Coding Moment\TShock Plugins\TerrariaMusicPlayer\TerrariaMusicPlayer\obj\Debug\TerrariaMusicPlayer.csprojAssemblyReference.cache
